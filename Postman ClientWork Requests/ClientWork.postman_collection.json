@@ -1,0 +1,116 @@
+{
+	"info": {
+		"_postman_id": "1d78c896-ad2e-458e-b961-a788dff1abae",
+		"name": "ClientWork",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "19671951"
+	},
+	"item": [
+		{
+			"name": "register-user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "username",
+							"value": "user4",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "user4@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "20022001@Sc",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{URL}}/api/register/",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"api",
+						"register",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get-works",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{URL}}/api/works/",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"api",
+						"works",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get-work-by-artist-name",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{URL}}/api/works?artist=ian",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"api",
+						"works"
+					],
+					"query": [
+						{
+							"key": "artist",
+							"value": "ian"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get-artist-by-work-type",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{URL}}/api/works?work_type=other",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"api",
+						"works"
+					],
+					"query": [
+						{
+							"key": "work_type",
+							"value": "other"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

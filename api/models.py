@@ -25,8 +25,6 @@ class Work(models.Model):
     def __str__(self):
         return str(self.work_type)
 
-
-
 class Artist(models.Model):
     _id = models.AutoField(primary_key=True, editable=False)
     name = models.CharField(max_length=200,null=True,blank=True)

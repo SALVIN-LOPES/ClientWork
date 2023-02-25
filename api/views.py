@@ -68,7 +68,7 @@ def getWorks(request):
             message = {'detail' : 'Artists','content' : serializer.data}
             return Response(message,status=status.HTTP_200_OK)
         else:
-            message = {'detail' : 'There are no Artists for artist name'}
+            message = {'detail' : 'There are no Artists for work_type'}
             return Response(message,status=status.HTTP_400_BAD_REQUEST)
 
 
